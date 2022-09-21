@@ -1,7 +1,7 @@
-*{
+* {
     font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 .main {
@@ -11,8 +11,9 @@
     width: 60%;
     margin: 10% auto;
 }
-.left-section{
-    flex:3;
+
+.left-section {
+    flex: 3;
     margin: 0px 50px;
 }
 
@@ -26,7 +27,9 @@
     margin-top: 10%;
 }
 
-#ed-title, #req-title, #connects-title {
+#ed-title,
+#req-title,
+#connects-title {
     /* flex:1; */
     display: flex;
     align-items: center;
@@ -53,15 +56,21 @@
 
 
 
-#ed-content, #req-content, #connects-content {
-flex: 2;
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-justify-content: space-evenly;
-background-color: white;
-padding-left: 10px;
-width: 95%;
+#ed-content,
+#req-content,
+#connects-content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    background-color: white;
+    padding-left: 10px;
+    width: 95%;
+}
+
+#connects-content {
+    padding: 0px 15px;
 }
 
 .peers {
@@ -74,15 +83,19 @@ width: 95%;
     font-weight: 600;
     font-size: 20px
 }
+
 #date {
     font-size: 18px;
     color: gray;
 }
+
 #langs {
     font-size: 15px
 }
 
-.user-card, .connects-card, .req-card {
+.user-card,
+.connects-card,
+.req-card {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -104,7 +117,7 @@ width: 95%;
     justify-content: space-around;
     align-items: flex-start;
     align-content: flex-end;
-    background-color:white;
+    background-color: white;
     padding-top: 25px;
     padding-left: 25px;
     padding-bottom: 0;
@@ -122,11 +135,13 @@ width: 95%;
     font-size: 30px;
     font-weight: 700;
 }
+
 #city {
     font-size: 25px;
     font-weight: 700;
     margin-bottom: 2%;
 }
+
 .main-section-user {
     position: relative;
     flex: 1;
@@ -223,10 +238,13 @@ ul {
     list-style: none;
 }
 
-a:hover, button:hover, div.confirm > img.peers:hover {
+a:hover,
+button:hover,.connection:hover,
+div.confirm>img.peers:hover {
     font-weight: 700;
     transform: scale(1.1);
 }
+
 .right-section {
     flex: 2;
     margin: 0px 50px;
@@ -234,11 +252,13 @@ a:hover, button:hover, div.confirm > img.peers:hover {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 700px;
+    /* height: 700px; */
 }
 
-.card-r1, .card-r2 {
+.card-r1,
+.card-r2 {
     width: 100%;
+    padding-right: 10px;
 }
 
 #req-content {
@@ -259,12 +279,14 @@ a:hover, button:hover, div.confirm > img.peers:hover {
     padding-bottom: 20px;
     /* flex: 1; */
 }
+
 .confirm {
     display: flex;
     flex: 1;
     align-items: center;
     justify-content: flex-end;
 }
+
 .friend {
     display: flex;
     flex: 1;
@@ -303,7 +325,7 @@ a:hover, button:hover, div.confirm > img.peers:hover {
     align-items: center;
     width: 100%;
     padding-right: 10px;
-    border: 1px solid  gray;
+    border: 1px solid gray;
 }
 
 .connection {
@@ -311,17 +333,32 @@ a:hover, button:hover, div.confirm > img.peers:hover {
     align-items: center;
     justify-content: space-between;
     align-content: flex-start;
-    width: 50%;
+    width: 60%;
     padding-top: 20px;
     padding-bottom: 20px;
 
     flex: 1;
 }
 
-.connects-card, .req-card {
+.connects-card,
+.req-card {
     justify-content: space-around;
     align-items: center;
     height: fit-content;
     padding-right: 10px;
     padding-left: 10px;
+}
+
+.view-more {
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 26px;
+    padding-right: 7px;
+    margin-left: -16px;
+    flex: 1;
+    border-top: 1px solid grey;
 }
